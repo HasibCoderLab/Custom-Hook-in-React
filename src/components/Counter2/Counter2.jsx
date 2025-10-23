@@ -3,7 +3,8 @@ import React from 'react'
 const Counter2 = () => {
   return (
     <div>
-      Counter2
+      <button className='m-4 '> +  Increase  </button> 
+      <button> - Decrease  </button>
       </div>
   )
 }
