@@ -1,10 +1,14 @@
 import React from 'react'
+import useCounter from '../../Hooks/useCounter'
 
 const Counter2 = () => {
+ const [increase , decrease , counter]=  useCounter()
   return (
-    <div>
-      <button className='m-4 '> +  Increase  </button> 
-      <button> - Decrease  </button>
+    <div className='mt-10'>
+      <h1>{counter}</h1>
+      <button  onClick={increase} className='m-4 '> +  Increase </button> 
+      <button  onClick={decrease} className='m-4 '> -  Decrease  </button> 
+      
       </div>
   )
 }
